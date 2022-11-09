@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5139e13a-f7ff-4428-b031-9e5f11f9501d" name="Changes" comment="" />
+    <list default="true" id="5139e13a-f7ff-4428-b031-9e5f11f9501d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ExamenProcesos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/archivo.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ej3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MD5LinEntradaEstandar.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2H2mvP3mEJPp3z4keC8WAQcCxO2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -16,9 +44,52 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/tarde/Desktop/ExamenProcesos/src"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tarde\Desktop\ExamenProcesos\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Ej3">
+    <configuration name="Ej2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ej2" />
+      <module name="ExamenProcesos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ej3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Ej3" />
+      <module name="ExamenProcesos" />
+      <option name="PROGRAM_PARAMETERS" value="hola" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MD5LinEntradaEstandar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MD5LinEntradaEstandar" />
+      <module name="ExamenProcesos" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Ej2" />
+      <item itemvalue="Application.Ej3" />
+      <item itemvalue="Application.MD5LinEntradaEstandar" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ej3" />
+        <item itemvalue="Application.Ej2" />
+        <item itemvalue="Application.MD5LinEntradaEstandar" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

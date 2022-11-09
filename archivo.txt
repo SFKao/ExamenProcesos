@@ -1,0 +1,6 @@
+hola que tal tengo 22 años y estoy en 2 de dam en 2022
+me encuentro diciendo hola ya que el programa lee
+cuantas lineas tiene hola
+deberia decir que hay 4 lineas
+find /C cuenta el numero de lineas que tiene una palabra
+en este caso hola

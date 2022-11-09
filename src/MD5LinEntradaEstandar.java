@@ -1,43 +1,39 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+import java.io.*;
+import java.util.Scanner;
 
 public class MD5LinEntradaEstandar {
 
   public static void main(String[] args) {
 
-    try (InputStreamReader isr = new InputStreamReader(System.in);
-            BufferedReader br = new BufferedReader(isr)) {
+    try (Scanner teclado = new Scanner(System.in)) {
 
-      ProcessBuilder pb = new ProcessBuilder("md5sum");
+      ProcessBuilder pb = new ProcessBuilder("find","\"hola\"","/C");
+      //ProcessBuilder pb = new ProcessBuilder("md5sum");
+
       pb.redirectError(ProcessBuilder.Redirect.INHERIT);
 
       System.out.print("md5txt> ");
-      String linea = br.readLine();
+      String linea = teclado.nextLine();
 
-      while (linea != null && linea.length() > 0) {
+      while (linea.length() > 0) {
         Process p = pb.start();
 
-        try (OutputStream osp = p.getOutputStream();
-                OutputStreamWriter oswp = new OutputStreamWriter(osp, "UTF-8");
-                BufferedWriter bwp = new BufferedWriter(oswp)) {
-          bwp.write(linea);
+        try (PrintWriter printWriter = new PrintWriter(p.getOutputStream(),true)){
+          printWriter.println(linea);
         }
         p.waitFor();
 
-        try (InputStream isp = p.getInputStream();
-                InputStreamReader isrp = new InputStreamReader(isp);
-                BufferedReader brp = new BufferedReader(isrp)) {
-          String lineaSalida = brp.readLine();
-          System.out.println((lineaSalida.split(" +"))[0]);
+        try (Scanner in = new Scanner(p.getInputStream())){
+          if(in.hasNextLine()) {
+            String lineaSalida = in.nextLine();
+            System.out.println((lineaSalida.split(" +"))[0]);
+          }else{
+            System.out.println("No se ha recibido nada del proceso.");
+          }
         }
 
         System.out.print("md5txt> ");
-        linea = br.readLine();
+        linea = teclado.nextLine();
       }
 
     } catch (IOException ex) {
